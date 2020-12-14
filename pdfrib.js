@@ -23,7 +23,7 @@ async function GenerateDoc() {
   
   iban = document.getElementById("iban").value
   ibanETA = iban.substr(4,iban.length-22)
-  ibanGUICHET = iban.substr(9, iban.length-18)
+  ibanGUICHET = iban.substr(9, iban.length-22)
   ibanACC = iban.substr(14, iban.length-4)
   ibanKEY = iban.substr(25, iban.length)
 
