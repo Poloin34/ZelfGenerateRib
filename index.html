@@ -8,6 +8,7 @@
 	<script src="https://unpkg.com/downloadjs@1.4.7"></script>
 
 	<script type="text/javascript" src="pdfrib.js"></script>
+	<script type="text/javascript" src="saythanks.js"></script>
 </head>
 <body style="background-color: #0e0d0d; color: white">
 <div style="padding: 2rem;"></div>
@@ -32,7 +33,7 @@
 	
 	<div style="padding: 0.5rem"></div>
 
-	<span>Mets ton nom et ton prénom :</span>
+	<span>Mets ton prénom et ton nom :</span>
 	<div style="padding: 0.2rem"></div>
 	<input type="text" name="name" id="name" placeholder="John DOE" style="width: 15rem">
 	
@@ -66,8 +67,11 @@
 
 
 <footer style="position: fixed; top: 0">
-	<span>
+	<span style="left: 0">
 		Site web développé par <a class="link" href="https://poloin.ga?from=zelfrib">Gaëtan Poloin</a> pour <a class="link" href="https://zelf.co">ZELF</a>. (<a class="link" href="https://zelf.co/s/SLPARWRMRK">Mon lien de parrainage</a>)	
+	</span>
+	<span style="right: 0">
+		<a href="" onclick="saythanks()">Dire merci <3</a>
 	</span>
 </footer>
 </body>
