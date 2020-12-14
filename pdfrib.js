@@ -19,7 +19,7 @@ async function GenerateDoc() {
 
   nom_prenom.setText(document.getElementById("name").value)
   addresse_rue.setText(document.getElementById("addressStreet").value)
-  addresse_cpville.setText(document.getElementById("addressZipcode").value + document.getElementById("addressCity").value)
+  addresse_cpville.setText(document.getElementById("addressZipcode").value + " " + document.getElementById("addressCity").value)
   
   iban = document.getElementById("iban").value
   ibanETA = iban.substr(4,iban.length-22)
