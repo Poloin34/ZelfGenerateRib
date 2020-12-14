@@ -22,9 +22,9 @@ async function GenerateDoc() {
   addresse_cpville.setText(document.getElementById("addressZipcode").value + document.getElementById("addressCity").value)
   
   iban = document.getElementById("iban").value
-  ibanETA = iban.substr(4,iban.length-20)
-  ibanGUICHET = iban.substr(9, iban.length-12)
-  ibanACC = iban.substr(14, iban.length-2)
+  ibanETA = iban.substr(4,iban.length-22)
+  ibanGUICHET = iban.substr(9, iban.length-18)
+  ibanACC = iban.substr(14, iban.length-4)
   ibanKEY = iban.substr(25, iban.length)
 
 
