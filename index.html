@@ -15,16 +15,19 @@
 <div style="padding: 2rem;"></div>
 
 <div style="text-align: center;">
-	<img src="zelf.png" width="100px" alt="Zelf Logo"> <span>x</span> <img src="poloin.png" width="100px" alt="Gaëtan Poloin Logo">
+	<img class="imgSize" src="zelf.png" width="100px" alt="Zelf Logo"> <span>x</span> <img class="imgSize" src="poloin.png" width="100px" alt="Gaëtan Poloin Logo">
 	<div style="padding: 1rem"></div>
-	<span style="font-size: 25px; font-weight: 700;">Ce site web va vous permettre de générer votre RIB Zelf en quelques secondes.</span>
+	<span class="tohide" style="font-size: 25px; font-weight: 700;">Ce site web va vous permettre de générer votre RIB Zelf en quelques secondes.</span>
+	<span class="toshow" style="font-size: 30px; font-weight: 700;">Génére ton RIB Zelf</span>
 </div>
 
-<div style="padding: 3rem;"></div>
+<div class="tohide" style="padding: 3rem;"></div>
+<div class="toshow" style="padding: 1.5rem;"></div>
 
 <div style="font-size: 20px; height: 3rem; text-align: center;">
 <!--	<label>Votre IBAN est disponible sur le Bot ZELF dans <span class="path">👑 Mon Zelf</span> puis <span class="path">📥 Créditer</span> et enfin <span class="path">🏦 Révéler mon IBAN</span></label> -->
-	<label style="align-content: center;">Votre IBAN est disponible sur le Bot ZELF dans <img class="path" src="monzelf.png" alt=" Mon Zelf "> puis <img class="path" src="crediter.png" alt=" Créditer "> et enfin <img class="path" src="iban.png" alt=" Révéler mon IBAN "></label>
+	<label class="tohide" style="align-content: center;">Votre IBAN est disponible sur le Bot ZELF dans <img class="path" src="monzelf.png" alt=" Mon Zelf "> puis <img class="path" src="crediter.png" alt=" Créditer "> et enfin <img class="path" src="iban.png" alt=" Révéler mon IBAN "></label>
+	<label class="toshow" style="align-content: center;">L'IBAN est disponible dans <br> <img class="path" src="monzelf.png" alt=" Mon Zelf "> <br> puis <br><img class="path" src="crediter.png" alt=" Créditer "><br> et enfin <br><img class="path" src="iban.png" alt=" Révéler mon IBAN "></label>
 	
 	<div style="padding: 2rem"></div>
 
@@ -40,7 +43,7 @@
 	
 	<div style="padding: 0.5rem"></div>
 
-	<div style="display: flex; justify-content: center; font-size: 20px">
+	<div class="screenModif" style="display: flex; justify-content: center; font-size: 20px">
 		<div>
 			<span>Mets ton adresse :</span>
 			<div style="padding: 0.2rem"></div>
@@ -61,15 +64,19 @@
 		
 
 	</div>
-	<div style="padding: 5rem"></div>
+	<div class="tohide" style="padding: 5rem"></div>
+	<div class="toshow" style="padding: 2rem"></div>
 	
 	<button style="border-radius: 5px; width: 25rem; height: 5rem; background-image: linear-gradient(10deg, yellow, green, purple);" onclick="GenerateDoc()">Générer mon RIB</button>
 </div>
 
 
 <footer style="position: fixed; top: 0">
-	<span style="left: 0; position: fixed;">
+	<span class="tohide" style="left: 0; position: fixed;">
 		Site web développé par <a class="link" href="https://poloin.ga?from=zelfrib">Gaëtan Poloin</a> pour <a class="link" href="https://zelf.co">ZELF</a>. (<a class="link" href="https://zelf.co/s/SLPARWRMRK">Mon lien de parrainage</a>)	
+	</span>
+	<span class="toshow" style="left: 0; position: fixed;">
+		Par <a class="link" href="https://poloin.ga?from=zelfrib">Poloin</a> pour <a class="link" href="https://zelf.co">ZELF</a>. (<a class="link" href="https://zelf.co/s/SLPARWRMRK">Lien de parrainage</a>)	
 	</span>
 	<span style="right: 0; position: fixed;">
 		<a href="#" style="color: lime; text-decoration: none;" onclick="saythanks()">Dire merci <3</a>
@@ -85,4 +92,26 @@
 	.link {
 		color: #8da0ff;
 	}
+	
+	@media screen and (min-width: 450px) {
+	  .toshow {
+	    display: none;
+	  }
+	}
+	
+	@media screen and (max-width: 450px) {
+	  .tohide {
+	    display: none;
+	  }
+	  .screenModif {
+	  	display: block!important;
+	  	padding-top: 1rem;
+	  }
+	  .imgSize {
+	  	width: 60px!important;
+	  	height: 60px!important;
+	  }
+	}
+
+
 </style>
