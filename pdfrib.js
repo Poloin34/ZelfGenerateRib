@@ -18,8 +18,8 @@ async function GenerateDoc() {
   const date = form.getTextField('date_of_the_day')
 
   nom_prenom.setText(document.getElementById("name").value)
-  addresse_rue.setText(document.getElementById("addresseStreet").value)
-  adresse_cpville.setText(document.getElementById("adsresseZipcode").value + document.getElementById("addresseCity").value)
+  addresse_rue.setText(document.getElementById("addressStreet").value)
+  adresse_cpville.setText(document.getElementById("addressZipcode").value + document.getElementById("addressCity").value)
   
   iban = document.getElementById("iban").value
   ibanETA = iban.substr(0,iban.length-22)
