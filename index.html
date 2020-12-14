@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zelf RIB Generator</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="pdf-lib.js"></script>
+	<script type="text/javascript" src="pdfrib.js"></script>
+</head>
+<body style="background-color: #0e0d0d; color: white">
+<div style="padding: 2rem;"></div>
+
+<div style="text-align: center;">
+	<img src="zelf.png" width="100px" alt="Zelf Logo"> <span>x</span> <img src="poloin.png" width="100px" alt="Gaëtan Poloin Logo">
+	<div style="padding: 1rem"></div>
+	<span style="font-size: 25px; font-weight: 700;">Ce site web va vous permettre de générer votre RIB Zelf en quelques secondes.</span>
+</div>
+
+<div style="padding: 3rem;"></div>
+
+<div style="font-size: 20px; height: 3rem; text-align: center;">
+<!--	<label>Votre IBAN est disponible sur le Bot ZELF dans <span class="path">👑 Mon Zelf</span> puis <span class="path">📥 Créditer</span> et enfin <span class="path">🏦 Révéler mon IBAN</span></label> -->
+	<label style="align-content: center;">Votre IBAN est disponible sur le Bot ZELF dans <img class="path" src="monzelf.png" alt=" Mon Zelf "> puis <img class="path" src="crediter.png" alt=" Créditer "> et enfin <img class="path" src="iban.png" alt=" Révéler mon IBAN "></label>
+	
+	<div style="padding: 2rem"></div>
+
+	<span>Remplis avec ton IBAN :</span>
+	<div style="padding: 0.2rem"></div>
+	<input type="text" name="IBAN" id="iban" placeholder="FR76167XXXXXXXXXXXXXXXXXXXX" style="width: 15rem">
+	
+	<div style="padding: 1rem"></div>
+	
+	<button style="border-radius: 5px; width: 25rem; height: 5rem; background-image: linear-gradient(10deg, yellow, green, purple);" onclick="GenerateDoc()">Générer mon RIB</button>
+</div>
+
+
+<footer style="position: fixed; top: 0">
+	<span>
+		Site web développé par <a class="link" href="https://poloin.ga?from=zelfrib">Gaëtan Poloin</a> pour <a class="link" href="https://zelf.co">ZELF</a>. (<a class="link" href="https://zelf.co/s/SLPARWRMRK">Mon lien de parrainage</a>)	
+	</span>
+</footer>
+</body>
+</html>
+
+<style type="text/css">
+	.path {
+		vertical-align: middle;
+	}
+	.link {
+		color: #8da0ff;
+	}
+</style>
