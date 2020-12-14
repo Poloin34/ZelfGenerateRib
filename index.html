@@ -29,13 +29,13 @@
 
 	<span>Remplis avec ton IBAN :</span>
 	<div style="padding: 0.2rem"></div>
-	<input type="text" name="iban" id="iban" placeholder="FR76167XXXXXXXXXXXXXXXXXXXX" style="width: 15rem">
+	<input required="required" type="text" name="iban" id="iban" placeholder="FR76167XXXXXXXXXXXXXXXXXXXX" style="width: 15rem">
 	
 	<div style="padding: 0.5rem"></div>
 
 	<span>Mets ton prénom et ton nom :</span>
 	<div style="padding: 0.2rem"></div>
-	<input type="text" name="name" id="name" placeholder="John DOE" style="width: 15rem">
+	<input required="required" type="text" name="name" id="name" placeholder="John DOE" style="width: 15rem">
 	
 	<div style="padding: 0.5rem"></div>
 
@@ -43,19 +43,19 @@
 		<div>
 			<span>Mets ton adresse :</span>
 			<div style="padding: 0.2rem"></div>
-			<input type="text" name="address" id="addressStreet" placeholder="69 rue des sauges" style="width: 15rem">	
+			<input required="required" type="text" name="address" id="addressStreet" placeholder="69 rue des sauges" style="width: 15rem">	
 		</div>
 		<div style="padding-right: 3rem"></div>		
 		<div>
 			<span>ta ville :</span>
 			<div style="padding: 0.2rem"></div>
-			<input type="text" name="city" id="addressCity" placeholder="Paris" style="width: 15rem">	
+			<input required="required" type="text" name="city" id="addressCity" placeholder="Paris" style="width: 15rem">	
 		</div>
 		<div style="padding-right: 3rem"></div>
 		<div>
 			<span>et son Code Postal :</span>
 			<div style="padding: 0.2rem"></div>
-			<input type="text" pattern="[0-9]{5}" name="zipcode" id="addressZipcode" placeholder="75001" style="width: 15rem">	
+			<input required="required" type="text" pattern="[0-9]{5}" name="zipcode" id="addressZipcode" placeholder="75001" style="width: 15rem">	
 		</div>
 		
 
