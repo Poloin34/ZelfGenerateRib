@@ -1,5 +1,5 @@
 function saythanks() {
-	confirmation = prompt("Ceci enverra UNIQUEMENT ce que vous écrivez au développeur de ce site web, êtes vous d'accord ?\nSi vous n'êtes pas d'accord, mettez \"Anonyme\"");
+	confirmation = prompt("Indiquez votre prénom/pseudo pour accompagner le remerciement. \nMettez \"Anonyme\" si vous souhaitez le rester.");
 	
 	if (confirmation == true) {
 		name = document.getElementById('name').value
