@@ -9,7 +9,7 @@ function saythanks() {
 
 	var params = {
     	username: "ZELF - RIB Generator page",
-    	avatar_url: "https://github.com/Poloin34/ZelfGenerateRib/blob/master/favicon.png",
+    	avatar_url: "https://raw.githubusercontent.com/Poloin34/ZelfGenerateRib/master/favicon.png",
     	content: confirmation.toString() + " te remercie !"
   	}
 
