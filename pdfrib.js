@@ -1,9 +1,9 @@
 async function GenerateDoc() {
-  const formUrl = 'https://github.com/Poloin34/ZelfGenerateRib/pdf.pdf'
+  const formUrl = 'pdf.pdf'
   const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer())
 
 
-  const pdfDoc = await PDFDocument.load(formPdfBytes)
+  const pdfDoc = await window.PDFDocument.load(formPdfBytes)
 
   const form = pdfDoc.getForm()
 
