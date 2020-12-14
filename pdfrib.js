@@ -35,6 +35,11 @@ async function GenerateDoc() {
   iban_clerib.setText(ibanKEY)
   iban_full.setText(iban)
   
+  
+  var d = new Date();
+  daydate = d.getDate().toString() + d.getMonth().toString() + d.getFullYear().toString()
+  console.log(daydate)
+
   date.setText(daydate)
 
   const pdfBytes = await pdfDoc.save()
