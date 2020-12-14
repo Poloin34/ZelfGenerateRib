@@ -1,6 +1,6 @@
 # Générer votre RIB Zelf en 20 secondes.
 
-### Vous pouvez soit y'accèdez via les (Github Pages)[https://poloin34.github.com/ZelfGenerateRib] soit en clonant le projet
+### Vous pouvez utiliser ce générateur via les (Github Pages)[https://poloin34.github.com/ZelfGenerateRib] ou localement en clonant le projet
 
 ---
 #### Cloner le projet:
