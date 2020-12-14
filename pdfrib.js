@@ -3,7 +3,7 @@ async function GenerateDoc() {
   const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer())
 
 
-  const pdfDoc = await PDFLibPDFDocument.load(formPdfBytes)
+  const pdfDoc = await PDFLib.PDFDocument.load(formPdfBytes)
 
   const form = pdfDoc.getForm()
 
