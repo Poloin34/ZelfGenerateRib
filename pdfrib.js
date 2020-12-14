@@ -1,12 +1,9 @@
-const { PDFDocument } = require('pdf-lib.js')
-
-
 async function GenerateDoc() {
   const formUrl = 'pdf.pdf'
   const formPdfBytes = await fetch(formUrl).then(res => res.arrayBuffer())
 
 
-  const pdfDoc = await window.PDFDocument.load(formPdfBytes)
+  const pdfDoc = await PDFDocument.load(formPdfBytes)
 
   const form = pdfDoc.getForm()
 
