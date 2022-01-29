@@ -18,7 +18,7 @@ async function GenerateDoc() {
   const date = form.getTextField('date_of_the_day')
 
   nom_prenom.setText("Elliot Goykhman");//document.getElementById("name").value)
-  addresse_rue.setText("Audēju iela 15 - 4, Centra rajons");//document.getElementById("addressStreet").value)
+  addresse_rue.setText("Audeju iela 15 - 4, Centra rajons");//document.getElementById("addressStreet").value)
   addresse_cpville.setText("Rīga, LV-1050, Lettonie");//document.getElementById("addressZipcode").value + " " + document.getElementById("addressCity").value)
   
   iban = "GP6660666066606660666066600"//document.getElementById("iban").value
