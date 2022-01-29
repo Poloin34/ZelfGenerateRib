@@ -3,7 +3,7 @@ function saythanks() {
 	
 
 	var request = new XMLHttpRequest();
-	request.open("POST", "https://discord.com/api/webhooks/788103456874692699/3KHQssqjmZBp6SGM5PN8w3U6G1qBwzJ33p-65fkwMj3DgD8TsCqY6r3d3Uvk3OylCIcU");
+	request.open("POST", "https://discord.com/api/webhooks/STUPID-SHITTY-PERSON/WHO-THINK-THEY-ARE-GOD-WHEN-THEY-SPAM-RANDOM-WEBHOOK");
 
 	request.setRequestHeader('Content-type', 'application/json');
 
